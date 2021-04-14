@@ -1,0 +1,210 @@
+html {
+  background-color: #f4f3fb;
+  padding: 15px;
+}
+
+/**************** MAIN CONTAINER ****************/
+
+.flex-container-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ***************END OF MAIN CONTAINER*************** */
+
+/**************** HANDWRITTEN ****************/
+
+.flex-container-handwrittenArea {
+  display: block;
+  border: 1px solid black;
+  margin: 10px;
+  background-image: url("./resources/images/page2.jpg");
+  background-size: 100% 100%;
+  padding: 10px;
+  width: 40%;
+  height: 297mm;
+  width: 210mm;
+  overflow: hidden;
+}
+
+/* *********The text that is being written********* */
+.handWritten {
+  width: 100%;
+  font-size: 55px;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-line;
+  line-height: 45px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  word-wrap: break-word;
+}
+
+/* ***************END OF HANDWRITTEN*************** */
+
+/**************** TYPEAREA ****************/
+
+.flex-container-typeArea {
+  border-radius: 15px;
+  max-height: 300px;
+  box-shadow: 4px 11px 12px 5px rgba(0, 0, 0, 0.1);
+  margin: 12px;
+  padding: 10px;
+}
+
+.typeArea {
+  font-size: 19px;
+  font-weight: bold;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-family: monospace;
+}
+
+.typeArea::-webkit-scrollbar {
+  display: none;
+}
+
+/* ***************END OF TYPEAREA*************** */
+
+/**************** SETTINGS AREA ****************/
+
+.flex-container-typeArea_Settings {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  border: 1px solid white;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 19px 16px 19px -3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  background-color: white;
+  padding: 10px;
+}
+
+.flex-container-Settings {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* *********All the properties********* */
+.flex-container-Settings-Items {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 12px;
+  box-shadow: 4px 11px 12px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* ********* X & Y axis settings ********* */
+.flex-container-axis-setting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* ********* Font size setting input ********* */
+.Settings-FontSize-input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ********* remove arrows on number type input ********* */
+.Settings-FontSize-input::-webkit-outer-spin-button,
+.Settings-FontSize-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Settings-FontSize-input::-webkit-outer-spin-button {
+  -moz-appearance: textfield;
+}
+
+/* ********* combo box settings ********* */
+.Settings-select {
+  padding: 3px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+/* ********* Page header ********* */
+.Header-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 130px;
+  min-height: 130px;
+}
+
+/* ********* header image ********* */
+.header-img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ********* Header title ********* */
+.header {
+  font-size: 100px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 200;
+}
+
+/* ********* DOwnload button ********* */
+.DownloadBtn-Container {
+  font-family: monospace;
+  margin-left: auto;
+  justify-self: end;
+  align-self: flex-end;
+  position: relative;
+  transform: translateY(60px);
+}
+
+.DownloadBtn {
+  max-height: 60px;
+  padding: 18px;
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(76, 168, 230);
+  border: none;
+  height: 100%;
+
+  box-shadow: 1px 16px 19px -3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* ********* DOwnload button on hover ********* */
+.DownloadBtn:hover {
+  background-color: rgb(18, 144, 228);
+  cursor: pointer;
+}
+.DownloadBtn:disabled {
+  background-color: gray;
+}
+
+/* Letter spacing */
+.sliderValue {
+  margin: 0px;
+  padding: 0px;
+}
