@@ -124,7 +124,7 @@ function App() {
       {isMobile ? null : (
         <GithubCorner
           size={100}
-          href={"https://github.com/adw-ait/Assignment-Writer"}
+          href={"https://github.com/ChinmayVichare/Assingment-Writter"}
           direction={"right"}
         />
       )}
